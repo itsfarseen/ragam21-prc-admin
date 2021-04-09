@@ -41,3 +41,63 @@ label::content {
 .event-link-sub-details > * {
   flex: 1;
 }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: solid 2px #333333;
+}
+
+header h1 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+.dashboard a {
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-bottom: solid 1px #ccc;
+}
+
+body {
+  max-width: 30em;
+  margin: auto;
+}
+
+.events-title {
+  font-size: 1.5rem;
+  padding: 1rem;
+  padding-bottom: 0;
+  font-weight: normal;
+  margin: 0;
+}
+
+.events-ca-entry > summary {
+  padding: 1rem;
+}
+.events-ca-entry > div {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1rem;
+  gap: 1rem;
+}
+
+.events-ca-entry > div > * {
+  padding: 0 1rem;
+}
+
+.events-ca-entry + .events-ca-entry {
+  border-top: solid 1px #ccc;
+}
+
+.pad1 {
+  padding: 1em;
+}

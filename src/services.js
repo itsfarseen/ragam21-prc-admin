@@ -17,3 +17,11 @@ export async function eventsByCategory() {
   return resp.json();
 }
 
+export async function eventDetails({ jwt, id }) {
+  const resp = await fetch(backendURL + `/user-event-details?event=${id}&_limit=99999`,
+    {
+      headers: { "Authorization": "Bearer " + jwt },
+    }
+  );
+  return await resp.json();
+}
