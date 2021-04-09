@@ -101,3 +101,8 @@ body {
 .pad1 {
   padding: 1em;
 }
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}

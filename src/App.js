@@ -1,8 +1,7 @@
 import './App.css';
 import { Login } from './Login';
 import { BrowserRouter, Link, Route, Switch, useHistory } from 'react-router-dom';
-import { Events } from './Events';
-import { CAs } from './CAs';
+import { CAs, Events } from './Events';
 
 function App() {
   return <BrowserRouter basename={process.env.BASE}><Main /></BrowserRouter>;
@@ -48,7 +47,10 @@ function LoggedInPage({ setLogout, children }) {
   return <main>
     <header>
       <h1>PRC Admin Panel</h1>
-      <button onClick={setLogout}>Logout</button>
+      <div style={{ display: "flex", flexDirection: "row", gap: "1em" }}>
+        <button onClick={() => window.print()}>Print</button>
+        <button onClick={setLogout}>Logout</button>
+      </div>
     </header>
     {children}
   </main>
