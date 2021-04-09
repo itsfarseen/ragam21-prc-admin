@@ -18,7 +18,7 @@ function Main() {
 
   const setJWT = (jwt) => {
     window.localStorage.setItem("jwt", jwt);
-    history.replace("/events");
+    history.replace("/");
   };
 
   const setLogout = () => {
