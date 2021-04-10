@@ -60,7 +60,7 @@ function consolidateRegs(regs, eventsById) {
       let ca = cas[refCode];
       let event = eventsById[reg.event];
       // if (event == null) throw "Event not found: " + reg.event + " - " + eventsById.length;
-      ca.add([user.ragamID, event.name]);
+      ca.add([user.ragamID + " - " + user.name, event.name]);
     }
   }
   return cas;
